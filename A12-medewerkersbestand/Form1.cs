@@ -24,7 +24,7 @@ namespace Salaris
         // Standaardwaarde = false, groen licht = true;
         bool Proceed = false;
 
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -253,7 +253,7 @@ namespace Salaris
             Single jSalaris = 0;
 
             // De nieuwe "int i" gaat in de for-loop van 0 naar hoeveel mensen er in de List<> aanwezig zijn.
-            for (int i=0; i < Medewerker_list.Count; i++)
+            for (int i = 0; i < Medewerker_list.Count; i++)
             {
                 // Single jSalaris krijgt steeds zijn huidige waarde + het salaris van Medewerker_list[i]. Dit gebeurt "i"-aantal keer.
                 jSalaris += Medewerker_list[i].iSalaris;
@@ -467,7 +467,7 @@ namespace Salaris
                 Clear();
                 ListUpdate();
                 ButtonCheck();
-            } 
+            }
         }
 
         /// <summary> /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -609,7 +609,7 @@ namespace Salaris
             }
             else
             {
-                err.SetError(txtSalaris,string.Empty);
+                err.SetError(txtSalaris, string.Empty);
                 fSalaris = false;
             }
         }
